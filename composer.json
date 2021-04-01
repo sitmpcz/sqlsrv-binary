@@ -1,0 +1,12 @@
+{
+    "name": "sitmpcz/sqlsrv-binary",
+    "type": "library",
+    "require": {
+        "php": ">=8.0",
+        "ext-sqlsrv": "*"
+    },
+    "minimum-stability": "dev",    
+    "autoload": {
+		"classmap": ["src/"]
+    }     
+}
