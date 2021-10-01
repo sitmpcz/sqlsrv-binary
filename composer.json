@@ -1,6 +1,9 @@
 {
     "name": "sitmpcz/sqlsrv-binary",
     "type": "library",
+    "description": "Insert and update file into ms sql server",
+    "homepage": "https://sitmp.cz",
+    "license": "GPL-3.0",	
     "require": {
         "php": ">=8.0",
         "ext-sqlsrv": "*"
