@@ -20,10 +20,11 @@ class MssqlBinary
     }
 
     /**
-     * @param string $tsql
-     * @param resource $fileStream
-     * @param array $params
-     * @return int|null
+     * @param string $tsql - SQL insert script for record create, first param for inserted file let empty
+     * @param resource $fileStream - insetred file
+     * @param array $params - inserted values (without file)
+     * @return int|null - the ID of the inserted record, if any. If null is returned when it should be an integer, check for an error.
+      If, for example, the value is truncated, the script will not be executed and no error will occur, nor will there be any error information.
      * @throws MssqlBinaryException
      */
     function SendBinaryStream(string $tsql, $fileStream, array $params = []): ?int
